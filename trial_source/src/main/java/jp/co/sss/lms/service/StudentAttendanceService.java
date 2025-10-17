@@ -73,6 +73,26 @@ public class StudentAttendanceService {
 		return attendanceManagementDtoList;
 	}
 
+	// 1017 add:須藤広大 Task25 ログイン日以前の未入力情報チェック処理追加
+	/**
+	 * ログイン日以前に未入力情報がないかのチェック
+	 * 
+	 * @param lmsUserId
+	 * @param deleteFlg
+	 * @param today
+	 * @return 未入力情報数
+	 */
+	public boolean blankCheck(int lmsUserId, boolean deleteFlg,  Date today) {
+		// 引数のtodayより前の日付の情報を確認し、未入力数を取得する。
+		int blankCount = 0;
+		
+		// 条件式で日付チェックを行う
+		// ログイン日から一日ずつ減らしていき、未入力情報があればblackCount+1
+		// 未入力情報がないなら次のレコードが存在するかチェック
+		
+		return true;
+	}
+	
 	/**
 	 * 出退勤更新前のチェック
 	 * 

@@ -46,7 +46,7 @@ public class AttendanceController {
 		List<AttendanceManagementDto> attendanceManagementDtoList = studentAttendanceService
 				.getAttendanceManagement(loginUserDto.getCourseId(), loginUserDto.getLmsUserId());
 		model.addAttribute("attendanceManagementDtoList", attendanceManagementDtoList);
-
+		// 1017 rp:須藤広大 Task25 おそらくこの部分に未入力情報確認のメソッドを追加する。
 		return "attendance/detail";
 	}
 
